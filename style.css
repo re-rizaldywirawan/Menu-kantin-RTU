@@ -81,6 +81,7 @@ body {
     height: 127.52px;
     bottom: 45px;
     right: -20px;
+    z-index: 5;
 }
 
 .hr {
@@ -92,21 +93,29 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
+    position: relative;
+    z-index: 5;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background-color: black;
+    background: black;
+    position: relative;
+    z-index: 5;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(165, 86, 12);
+    position: relative;
+    z-index: 5;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(224, 116, 15);
+    position: relative;
+    z-index: 5;
   }
 
 .bg-menu::after {
@@ -117,7 +126,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 3150px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.520), rgba(0, 0, 0, 0.520));
     backdrop-filter: blur(4px);
     z-index: 1;
 }
@@ -230,7 +239,7 @@ border-radius: 60px;
     }
     .bg-menu::after {
         backdrop-filter: blur(8px);
-        background-color: rgba(0, 0, 0, 0.383);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.520), rgba(0, 0, 0, 0.520));
     }
     .bg-menu {
         background-image:none;
