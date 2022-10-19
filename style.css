@@ -133,10 +133,32 @@ body {
 
 .logo-rtu {
     position:absolute;
+    z-index: 99;
+    transform: scale(0.22);
+}
+.promo {
+    position: absolute;
+    color : rgb(255, 255, 255);
     z-index: 999;
-    transform: scale(0.25);
+    top: 80%;
+    font-size: 10px;
+    font-family: 'Inter' ;
+    animation: kelap-kelip 0.8s infinite ease-in-out;
 }
 
+@keyframes kelap-kelip {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: #D5863D;
+    }
+
+    100% {
+            color: white;
+    }
+}
 .whatsapp-container {
     position: fixed;
     bottom: 4%;
@@ -254,7 +276,7 @@ border-radius: 60px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.520), rgba(0, 0, 0, 0.520));
     }
     .logo-rtu {
-        transform: scale(0.33);
+        transform: scale(0.24);
     }
     .bg-menu {
         background-image:none;
