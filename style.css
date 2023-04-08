@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 body {
     background: rgb(52, 29, 7);
    
@@ -138,6 +142,7 @@ body {
 }
 .promo {
     position: absolute;
+    text-transform: uppercase;
     color : rgb(255, 255, 255);
     z-index: 999;
     top: 80%;
